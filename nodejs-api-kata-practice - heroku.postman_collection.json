@@ -1,0 +1,224 @@
+{
+	"info": {
+		"_postman_id": "1277fbff-49c5-4b4a-ac3b-8cb355791d86",
+		"name": "nodejs-api-kata-practice - heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://nodejs-api-kata-practice.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"nodejs-api-kata-practice",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get single todo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://nodejs-api-kata-practice.herokuapp.com/todos/[todo id]",
+					"protocol": "https",
+					"host": [
+						"nodejs-api-kata-practice",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"[todo id]"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get todos ( with query )",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://nodejs-api-kata-practice.herokuapp.com/todos?complete=true",
+					"protocol": "https",
+					"host": [
+						"nodejs-api-kata-practice",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					],
+					"query": [
+						{
+							"key": "complete",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"123\"\r\n}"
+				},
+				"url": {
+					"raw": "https://nodejs-api-kata-practice.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"nodejs-api-kata-practice",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete all todos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://nodejs-api-kata-practice.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"nodejs-api-kata-practice",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete single todo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://nodejs-api-kata-practice.herokuapp.com/todos/[todo id]",
+					"protocol": "https",
+					"host": [
+						"nodejs-api-kata-practice",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"[todo id]"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update todo ( all condition )",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"789\"\r\n}"
+				},
+				"url": {
+					"raw": "https://nodejs-api-kata-practice.herokuapp.com/todos/[todo id]?complete=false",
+					"protocol": "https",
+					"host": [
+						"nodejs-api-kata-practice",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"[todo id]"
+					],
+					"query": [
+						{
+							"key": "complete",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update todo ( only query )",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "https://nodejs-api-kata-practice.herokuapp.com/todos/[todo id]?complete=true",
+					"protocol": "https",
+					"host": [
+						"nodejs-api-kata-practice",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"[todo id]"
+					],
+					"query": [
+						{
+							"key": "complete",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update todo ( only body )",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"789\"\r\n}"
+				},
+				"url": {
+					"raw": "https://nodejs-api-kata-practice.herokuapp.com/todos/[todo id]",
+					"protocol": "https",
+					"host": [
+						"nodejs-api-kata-practice",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"[todo id]"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
